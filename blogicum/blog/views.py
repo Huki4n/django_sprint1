@@ -51,8 +51,8 @@ def index(request):
 
 
 def category_posts(request, category_slug):
-  return render(request, 'blog/category.html', {'slug': category_slug})
+    return render(request, 'blog/category.html', {'slug': category_slug})
 
 
 def post_detail(request, id):
-  return render(request, 'blog/detail.html', {'post': posts[id]})
+    return render(request, 'blog/detail.html', {'post': posts[id]})
